@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using OnlineShop.Data;
-using OnlineShop.Models;
+using OnlineShopApp.Data;
+using OnlineShopApp.Models;
 using OnlineShop.Utility;
+using OnlineShop.Models;
 
 namespace OnlineShop.Areas.Customer.Controllers
 {

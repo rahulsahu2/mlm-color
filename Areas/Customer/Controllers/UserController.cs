@@ -4,8 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using OnlineShop.Data;
 using OnlineShop.Models;
+using OnlineShopApp.Data;
+using OnlineShopApp.Models;
 
 namespace OnlineShop.Areas.Customer.Controllers
 {

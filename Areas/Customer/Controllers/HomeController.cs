@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineShop.Data;
-using OnlineShop.Models;
+using OnlineShopApp.Data;
+using OnlineShopApp.Models;
 using OnlineShop.Utility;
-using X.PagedList;
+using OnlineShopApp.Data;
 
 namespace OnlineShop.Controllers
 {

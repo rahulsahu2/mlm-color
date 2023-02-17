@@ -170,3 +170,14 @@ H:\OnlineShopApp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\SpecialTag\Dele
 H:\OnlineShopApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TagPartial.cshtml.g.cs
 H:\OnlineShopApp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Index.cshtml.g.cs
 H:\OnlineShopApp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Create.cshtml.g.cs
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.csproj.AssemblyReference.cache
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.AssemblyInfoInputs.cache
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.AssemblyInfo.cs
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.csproj.CoreCompileInputs.cache
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.MvcApplicationPartsAssemblyInfo.cs
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.MvcApplicationPartsAssemblyInfo.cache
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.RazorAssemblyInfo.cache
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.RazorAssemblyInfo.cs
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.dll
+D:\dotnet-core-ecommernce\Ecommerce-Website-Using-ASP.NET-Core\obj\Debug\netcoreapp3.1\OnlineShopApp.pdb

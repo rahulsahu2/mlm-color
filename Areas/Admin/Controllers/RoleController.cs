@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using OnlineShop.Areas.Admin.Models;
-using OnlineShop.Data;
+using OnlineShopApp.Data;
 
 namespace OnlineShop.Areas.Admin.Controllers
 {

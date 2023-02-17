@@ -5,6 +5,13 @@
     <UserSecretsId>aspnet-OnlineShopApp-01230947-DEAC-45F4-8847-59764DDBB9C3</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.1" />
@@ -17,7 +24,6 @@
 
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
