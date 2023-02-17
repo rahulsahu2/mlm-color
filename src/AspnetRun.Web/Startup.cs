@@ -125,12 +125,12 @@ namespace AspnetRun.Web
         public void ConfigureDatabases(IServiceCollection services)
         {
             // use in-memory database
-            services.AddDbContext<AspnetRunContext>(c =>
-                c.UseInMemoryDatabase("AspnetRunConnection"));
-
-            //// use real database
             //services.AddDbContext<AspnetRunContext>(c =>
-            //    c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection"), x => x.MigrationsAssembly("AspnetRun.Web")));
+            //    c.UseInMemoryDatabase("AspnetRunConnection"));
+
+            // use real database
+            services.AddDbContext<AspnetRunContext>(c =>
+                c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection"), x => x.MigrationsAssembly("AspnetRun.Web")));
         }
 
         public void ConfigureIdentity(IServiceCollection services)
