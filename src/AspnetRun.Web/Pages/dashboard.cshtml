@@ -1,4 +1,118 @@
 ﻿@page
 @model AspnetRun.Web.Pages.dashboardModel
-@{
+@{Layout = "/Pages/Shared/_Layout-game.cshtml";
+    Random rnd = new Random();
+    string[] colorarray = new string[]{"redbtn","greenbtn","voiletbtn"};
+}
+<style>
+    .win-color{
+        width:2px;
+        height:2px;
+        background-color:expression("rgb(" + Math.floor(Math.random() * 255)
+      + "," + Math.floor(Math.random() * 255) + ","
+      + Math.floor(Math.random() * 255) + ")");
+    }
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .margin{
+        margin:5px;
+    }
+    .info{
+        width:200px;
+        height:40px;
+        background-color: purple;
+    }
+    .redbtn{
+        background-color:red;
+        color: white;
+    }
+    .greenbtn{
+        background-color:green;
+        color: white;
+    }
+    .voiletbtn{
+        background-color:violet;
+        color: white;
+    }
+</style>
+<div class="container">
+     <div class="row">
+    <div class="col-sm-12">
+      <div class="jumbotron">
+            <h3>Available Balance : <b>123.0</b></h3>
+            <input type="button" class="btn btn-primary" value="Recharge"/>
+            <input type="button" class="btn btn-warning" value="Trends"/>
+      </div>  
+    </div>
+    <div class="col-md-12 flex-container margin">
+        <div>
+            <label>Period</label><br />
+            <h2 id="periodId"></h2>
+        </div>
+        <div>
+            <label>Count Down</label><br />
+            <h2 id="countDown" >00:00</h2>
+        </div>
+    </div>
+    <div class="col-md-12 flex-container margin">
+        <input type="button" class="btn btn-primary greenbtn" value="Join Green"/>
+        <input type="button" class="btn btn-warning voiletbtn" value="Join Voilet"/>
+        <input type="button" class="btn btn-warning redbtn" value="Join Red"/>
+    </div>
+    <div class="col-sm-12 flex-container margin">
+        @{
+            for(int i=0;i<5; i++)
+            {
+                var ran = rnd.Next(0, 2);
+                <label type="button" class="btn btn-danger info @colorarray[ran]" id="@i" >@i</label>
+            }
+        }
+    </div>
+    <div class="col-sm-12 flex-container margin">
+        @{
+            for(int i=5;i<10; i++)
+            {
+                var ran = rnd.Next(0, 2);
+                <label type="button" class="btn btn-danger info @colorarray[ran]" id="@i" >@i</label>
+            }
+        }
+    </div>
+    <div class="col-sm-12 margin">
+      <table class="table table-hover">
+        <thead>
+            <tr>
+            <th>Period</th>
+            <th>Price</th>
+            <th>Number</th>
+            <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>20230220354</td>
+            <td>15516</td>
+            <td>1</td>
+            <td><lable class="win-color"></lable></td>
+            </tr>
+            <tr>
+            <td>20230220353</td>
+            <td>15483</td>
+            <td>6</td>
+            <td><lable class="win-color"></lable></td>
+            </tr>
+            <tr>
+            <td>20230220352</td>
+            <td>15482</td>
+            <td>12</td>
+            <td><lable class="win-color"></lable></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+</div>
+@section Scripts {
+    <script src="~/assets/js/countDown.js"></script>
 }
