@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>@ViewData["Title"] - Alfonso - E&E - Electronics eCommerce Bootstrap4 HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/images/favicon.ico">
+
+    <!-- CSS
+    ============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="~/assets/css/icon-font.min.css">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="~/assets/css/plugins.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <!-- Modernizer JS -->
+    <script src="~/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+
+<body>
+
+    <!-- Header Section Start -->
+    <div class="header-section section">
+
+        <!-- Header Top Start -->
+        <div class="header-top header-top-one header-top-border pt-10 pb-10">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col mt-10 mb-10">
+                        <!-- Header Links Start -->
+                        <div class="header-links">
+                            <a asp-area="" asp-page="/Home"><img src="~/assets/images/icons/car.png" alt="Car Icon"> <span>Home</span></a>
+                            <a asp-area="" asp-page="/TrackOrder"><img src="~/assets/images/icons/car.png" alt="Car Icon"> <span>Account</span></a>
+                            <a asp-area="" asp-page="/Dashboard"><img src="~/assets/images/icons/marker.png" alt="Car Icon"> <span>Win</span></a>
+                        </div><!-- Header Links End -->
+                    </div>
+
+                    <div class="col order-2 order-xs-2 order-lg-12 mt-10 mb-10">
+
+                        <partial name="_LoginPartial" />
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Header Top End -->
+
+    </div>
+    <!-- Header Section End -->
+
+    @if (IsSectionDefined("CartNotRequired"))
+    {
+        RenderSection("CartNotRequired");
+    }
+    else
+    {
+        <vc:shopping-cart></vc:shopping-cart>
+    }
+
+    @RenderBody();
+
+    
+    <!-- Footer Section Start -->
+    <div class="footer-section section bg-ivory">
+        <!-- Footer Bottom Section Start -->
+        <div class="footer-bottom-section section">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Copyright -->
+                    <div class="col-lg-6 col-12">
+                        <div class="footer-copyright"><p>&copy; Copyright, 2018 All Rights Reserved by <a href="https://freethemescloud.com/">Free themes Cloud</a></p></div>
+                    </div>
+
+                    <!-- Footer Payment Support -->
+                    <div class="col-lg-6 col-12">
+                        <div class="footer-payments-image"><img src="~/assets/images/payment-support.png" alt="Payment Support Image"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div><!-- Footer Bottom Section Start -->
+
+    </div>
+    <!-- Footer Section End -->
+    <!-- JS
+    ============================================ -->
+    <!-- jQuery JS -->
+    <script src="~/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- Popper JS -->
+    <script src="~/assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="~/assets/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="~/assets/js/main.js"></script>
+
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
