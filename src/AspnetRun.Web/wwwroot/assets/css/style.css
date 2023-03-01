@@ -11799,3 +11799,13 @@ ul.link-widget li {
   height: 120px;
   resize: none;
   background-color: transparent; }
+.footer {
+    position: fixed;
+    left: 0;
+    z-index:1000;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+}
